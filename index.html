@@ -12,8 +12,8 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: 'Georgia', 'Times New Roman', serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -25,9 +25,10 @@
             width: 100%;
             max-width: 1200px;
             background: white;
-            border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            border-radius: 0;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.5);
             overflow: hidden;
+            border: 3px solid #000;
         }
 
         .slide {
@@ -49,38 +50,47 @@
         }
 
         .slide-header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #000;
             color: white;
             padding: 30px;
             margin: -60px -60px 40px -60px;
             border-radius: 0;
+            border-bottom: 4px solid #fff;
         }
 
         h1 {
             font-size: 2.5em;
             margin-bottom: 15px;
             font-weight: 700;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
         }
 
         h2 {
             font-size: 2em;
-            color: #667eea;
+            color: #000;
             margin-bottom: 30px;
-            font-weight: 600;
+            font-weight: 700;
+            font-family: 'Georgia', serif;
+            border-bottom: 3px solid #000;
+            padding-bottom: 15px;
+            letter-spacing: 1px;
         }
 
         h3 {
             font-size: 1.4em;
-            color: #764ba2;
+            color: #1a1a1a;
             margin: 25px 0 15px 0;
-            font-weight: 600;
+            font-weight: 700;
+            font-family: 'Georgia', serif;
         }
 
         p, li {
             font-size: 1.1em;
             line-height: 1.8;
-            color: #333;
+            color: #1a1a1a;
             margin-bottom: 15px;
+            font-family: 'Georgia', serif;
         }
 
         ul {
@@ -95,8 +105,8 @@
         }
 
         ul li:before {
-            content: "▸";
-            color: #667eea;
+            content: "§";
+            color: #000;
             font-weight: bold;
             position: absolute;
             left: 0;
@@ -107,20 +117,27 @@
             font-size: 1.2em;
             opacity: 0.9;
             font-weight: 300;
+            color: #fff;
         }
 
         .author-info {
             margin-top: 30px;
             padding-top: 20px;
             border-top: 2px solid rgba(255,255,255,0.3);
+            color: #fff;
+        }
+        
+        .author-info p {
+            color: #fff;
         }
 
         .highlight-box {
-            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            background: #f5f5f5;
             padding: 25px;
-            border-radius: 15px;
+            border-radius: 0;
             margin: 25px 0;
-            border-left: 5px solid #667eea;
+            border-left: 5px solid #000;
+            border: 2px solid #000;
         }
 
         .two-column {
@@ -131,10 +148,10 @@
         }
 
         .column {
-            background: #f8f9fa;
+            background: #fafafa;
             padding: 25px;
-            border-radius: 15px;
-            border: 2px solid #e9ecef;
+            border-radius: 0;
+            border: 2px solid #000;
         }
 
         .stats-grid {
@@ -147,10 +164,11 @@
         .stat-box {
             text-align: center;
             padding: 25px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #000;
             color: white;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+            border-radius: 0;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border: 3px solid #000;
         }
 
         .stat-number {
@@ -169,26 +187,30 @@
             justify-content: space-between;
             align-items: center;
             padding: 25px 40px;
-            background: #f8f9fa;
-            border-top: 2px solid #e9ecef;
+            background: #000;
+            border-top: 3px solid #fff;
         }
 
         button {
             padding: 12px 30px;
             font-size: 1em;
-            border: none;
-            border-radius: 25px;
+            border: 2px solid #fff;
+            border-radius: 0;
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: 600;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: #000;
             color: white;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: none;
+            font-family: 'Georgia', serif;
+            letter-spacing: 1px;
         }
 
         button:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+            transform: none;
+            background: #fff;
+            color: #000;
+            box-shadow: none;
         }
 
         button:disabled {
@@ -199,17 +221,19 @@
 
         .slide-counter {
             font-size: 1.1em;
-            color: #666;
+            color: #fff;
             font-weight: 600;
+            font-family: 'Georgia', serif;
         }
 
         .key-findings {
             background: white;
             padding: 20px;
-            border-radius: 12px;
+            border-radius: 0;
             margin: 15px 0;
-            border-left: 4px solid #667eea;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            border-left: 4px solid #000;
+            box-shadow: none;
+            border: 2px solid #000;
         }
 
         @media (max-width: 768px) {
@@ -235,8 +259,8 @@
 <body>
     <div class="presentation-container">
         <!-- Slide 1: Title -->
-        <div class="slide active">
-            <div class="slide-header">
+        <div class="slide active" style="padding: 0;">
+            <div class="slide-header" style="margin: 0; min-height: 600px; display: flex; flex-direction: column; justify-content: center;">
                 <h1>Blockchain-Enhanced IP Filing Platform with AI Document Analysis</h1>
                 <p class="subtitle">A Study on Design and Implementation</p>
                 <div class="author-info">
@@ -365,15 +389,19 @@
                     display: inline-block;
                     padding: 20px 50px;
                     font-size: 1.3em;
-                    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                    background: #000;
                     color: white;
                     text-decoration: none;
-                    border-radius: 30px;
-                    font-weight: 600;
-                    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+                    border-radius: 0;
+                    font-weight: 700;
+                    box-shadow: none;
                     transition: all 0.3s ease;
-                ">
-                    🔗 Launch Demo Platform
+                    border: 3px solid #000;
+                    font-family: 'Georgia', serif;
+                    letter-spacing: 1px;
+                " onmouseover="this.style.background='#fff'; this.style.color='#000';" 
+                   onmouseout="this.style.background='#000'; this.style.color='#fff';">
+                    ⚖ LAUNCH DEMO PLATFORM
                 </a>
             </div>
             
@@ -387,7 +415,9 @@
                 </ul>
             </div>
             
-           
+            <p style="text-align: center; margin-top: 30px; color: #1a1a1a; font-style: italic;">
+                Click the button above to explore the prototype (opens in new tab)
+            </p>
         </div>
 
         <!-- Slide 7: Methodology -->
